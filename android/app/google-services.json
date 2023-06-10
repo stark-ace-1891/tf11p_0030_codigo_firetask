@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "789191493722",
+    "project_id": "codigo-task-b3e90",
+    "storage_bucket": "codigo-task-b3e90.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789191493722:android:4ae5958f7d2ef6cbda7063",
+        "android_client_info": {
+          "package_name": "com.tecsup.tf11p_0030_codigo_firetask"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "789191493722-psqo7viaot0rjq6j4c6ecg0j881ogipg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4dzlK5dCGO038ZcS4_637pJWgEfSS6-s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "789191493722-psqo7viaot0rjq6j4c6ecg0j881ogipg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

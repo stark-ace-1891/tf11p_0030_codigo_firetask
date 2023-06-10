@@ -1,4 +1,4 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.tecsup.tf11p_0030_codigo_firetask" >
     <application
         android:label="tf11p_0030_codigo_firetask"
         android:name="${applicationName}"
