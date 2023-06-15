@@ -35,7 +35,39 @@ class HomePage extends StatelessWidget {
                 });
               },
               child: Text("Obtener la data"),
-            )
+            ),
+            ElevatedButton(
+              onPressed: () {
+                tasksReference.add({
+                  "title": "Ir de compras al super 2",
+                  "description": "Debemos comprar comida pra el mes",
+                }).then((DocumentReference value){
+                  print(value.id);
+                }).catchError((error){
+                  print("Ocurrio un error en el registro");
+                }).whenComplete((){
+                  print("Registro terminado");
+                });
+              },
+              child: Text(
+                "Agregar docuemnto",
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                tasksReference.doc("8QGBfySyRKdsZSRiUn5V").update({
+                  "title": "Ir de compras al super 222",
+                  "description": "Debemos comprar comida pra el mes 222",
+                }).catchError((error){
+                  print("Ocurrio un error en el registro");
+                }).whenComplete((){
+                  print("Registro actualizado");
+                });
+              },
+              child: Text(
+                "Actualizar docuemnto",
+              ),
+            ),
           ],
         ),
       ),
