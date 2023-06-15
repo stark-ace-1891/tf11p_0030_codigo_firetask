@@ -68,6 +68,37 @@ class HomePage extends StatelessWidget {
                 "Actualizar docuemnto",
               ),
             ),
+            ElevatedButton(
+              onPressed: () {
+                tasksReference.doc("8QGBfySyRKdsZSRiUn5V")
+                .delete()
+                .catchError((error){
+                  print("Ocurrio un error en el registro");
+                }).whenComplete((){
+                  print("Eliminacion actualizado");
+                });
+              },
+              child: Text(
+                "Eliminar docuemnto",
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                tasksReference.doc("A0001")
+                .set({
+                  "title": "Ir de compras al super 333",
+                  "description": "Debemos comprar comida pra el mes 333",
+                })
+                .catchError((error){
+                  print("Ocurrio un error en el registro");
+                }).whenComplete((){
+                  print("Creacion completada");
+                });
+              },
+              child: Text(
+                "Agregar docuemnto personalizado",
+              ),
+            ),
           ],
         ),
       ),
